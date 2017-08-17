@@ -104,9 +104,8 @@ body {
   }
 
   .info:hover > .circa {
-    // r: 40;
     opacity: 1;
-    animation: infotrace 0.3s 0.2s linear 1;
+    animation: infotrace 0.3s 0.2s ease 1;
     transform: rotate(-90deg);
   }
 
