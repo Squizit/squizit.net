@@ -8,4 +8,4 @@ In the mean time, feel free to check out the cool animations! The site is live o
 
 ---
 
-*Don't use graphics and content included with the site without prior permission*
+*Don't use graphics and content included with this site without prior permission*
