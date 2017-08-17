@@ -28,6 +28,19 @@
   }
 }
 
+@keyframes infotrace {
+  0% {
+    r: 40;
+  }
+  99% {
+    stroke-dashoffset: 250;
+    r: 40;
+  }
+  100% {
+    r: 20;
+  }
+}
+
 @keyframes moveDown {
 
   from {
