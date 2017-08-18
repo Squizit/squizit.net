@@ -64,12 +64,12 @@ body {
     animation-delay: 0.2s;
   }
 
-  h1 > a > .arrow-right {
+  h1 > .arrow-right {
     display: none;
     margin: 0 0 10px 16px;
   }
 
-  h1 > a:hover > .arrow-right {
+  h1 > a:hover ~ .arrow-right {
     animation-name: flicker;
     animation-duration: 0.2s;
     animation-iteration-count: 1;
