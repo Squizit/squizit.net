@@ -1,0 +1,148 @@
+---
+---
+
+@import "animations";
+@import "mixins";
+@import "fonts";
+
+body {
+    background: #333;
+    overflow:hidden;
+}
+
+.NOTE-GOAT {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 8px;
+}
+
+.logo {
+    .full-logo {
+        width: 1200px;
+        margin: 32px 0 0 32px;
+    }
+}
+
+.menu {
+    z-index: 0;
+    margin: 32px 0 0 32px;
+    h1 > a {
+        font-family: 'Bebas Neue';
+        font-size: 100px;
+        font-weight: normal;
+        text-shadow:
+        -1px -1px 0 #333,
+        1px -1px 0 #333,
+        -1px 1px 0 #333,
+        1px 1px 0 #333;
+        position: relative;
+        text-decoration: none;
+        color: #4CAF50;
+        transition: color 0.5s;
+    }
+
+    h1 > a:hover {
+        animation-name: flicker;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        color: #81C784;
+    }
+
+    h1 > a:before {
+        content: "";
+        position: absolute;
+        visibility: none;
+        height: 2px;
+        bottom: 0;
+        background-color: #81C784;
+    }
+
+    h1 > a:hover:before {
+        animation-name: underline;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-delay: 0.2s;
+    }
+
+    h1 > .arrow-right {
+        display: none;
+        margin: 0 0 10px 16px;
+    }
+
+    h1 > a:hover ~ .arrow-right {
+        animation-name: flicker;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 0 25px 43.3px;
+        border-color: transparent transparent transparent #81C784;
+    }
+}
+
+.info-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    .circ {
+        fill: #4CAF50;
+        r:35;
+        transition: fill 0.2s;
+    }
+
+    .circa {
+        r: 20;
+        fill: none;
+        stroke: #81C784;
+        stroke-width: 2;
+        animation-duration: 5s;
+        stroke-dasharray: 250;
+        stroke-dashoffset: 750;
+        transform-origin: 50% 50%;
+    }
+
+    .info:hover > .circa {
+        opacity: 1;
+        animation: infotrace 0.4s 0.2s ease-in-out 1;
+        transform: rotate(-90deg);
+    }
+
+    .info:hover > .circ {
+        opacity: 1;
+        fill: #81C784;
+        animation-name: flicker;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+    }
+}
+
+.lines {
+    .line1 {
+        @include animLine(moveDown, 1, 0s, #C8E6C9);
+    }
+
+    .line1-1 {
+        @include animLine(moveDown, 1, 10s, #C8E6C9);
+    }
+
+    .line2 {
+        @include animLine(moveUp, 0, 0s, #81C784);
+    }
+
+    .line2-2 {
+        @include animLine(moveUp, 0, 10s, #81C784);
+    }
+
+    .line3 {
+        @include animLine(moveDown, -1, 4s, #4CAF50);
+    }
+
+    .line3-3 {
+        @include animLine(moveDown, -1, 14s, #4CAF50);
+    }
+}

@@ -1,0 +1,83 @@
+@keyframes underline {
+  0% {
+    width: 0%;
+    left:0;
+    visibility: visible;
+  }
+
+  40% {
+    width:100%;
+    left:0;
+  }
+  60% {
+    width:100%;
+    right:0;
+  }
+
+  100% {
+    width:0%;
+    right:0;
+  }
+}
+
+@keyframes flicker {
+  @for $i from 0 through 100 {
+    #{$i}% {
+      opacity: random(100)/100;
+    }
+  }
+}
+
+@keyframes infotrace {
+  0% {
+    r: 40;
+  }
+  99% {
+    stroke-dashoffset: 250;
+    r: 40;
+  }
+  100% {
+    r: 20;
+  }
+}
+
+@keyframes moveDown {
+
+  from {
+    animation-timing-function: linear;
+    opacity: 1;
+    transform:
+      translateX(-500px)
+      translateY(-500px)
+      rotate(45deg)
+  }
+
+  to {
+    animation-timing-function: linear;
+    opacity: 1;
+    transform:
+      translateX(500px)
+      translateY(500px)
+      rotate(45deg)
+  }
+}
+
+@keyframes moveUp {
+
+  from {
+    animation-timing-function: linear;
+    opacity: 1;
+    transform:
+      translateX(500px)
+      translateY(500px)
+      rotate(45deg)
+  }
+
+  to {
+    animation-timing-function: linear;
+    opacity: 1;
+    transform:
+      translateX(-500px)
+      translateY(-500px)
+      rotate(45deg)}
+}

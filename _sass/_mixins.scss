@@ -1,0 +1,15 @@
+@mixin animLine($anim, $offset, $delay, $background) {
+  height: 40px;
+  background: $background;
+  width: 400px;
+  position: absolute;
+  left: $offset*60px;
+  bottom: $offset*60px;
+  opacity: 0;
+  z-index: -1;
+
+  animation-name: $anim;
+  animation-duration: 20s;
+  animation-delay: $delay;
+  animation-iteration-count: infinite;
+}
