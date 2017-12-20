@@ -1,92 +1,15 @@
-<!--SITE GENERATED ON Tue, 19 Dec 2017 17:54:43 -0700-->
+<!--SITE GENERATED ON {{ site.time | date_to_rfc822 }}-->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="http://localhost:4000/favicons/favicon-32.png" sizes="32x32">
-  <link rel="icon" href="http://localhost:4000/favicons/favicon-48.png" sizes="48x48">
-  <link rel="icon" href="http://localhost:4000/favicons/favicon-96.png" sizes="96x96">
-  <link rel="icon" href="http://localhost:4000/favicons/favicon-144.png" sizes="144x144">
-
-  <title>Squizit</title>
-
-  <meta name="description" content="Squizit creates high-quality events, media, and software to make the world more fun to live in. Fantasies can be real, and we will do them justice.
-">
-
-  <link rel="stylesheet" href="http://localhost:4000/css/style.css" />
-
-  <meta name="theme-color" content="#4CAF50">
-
-  <meta property="og:site_name" content="Squizit" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Squizit" />
-  <meta property="og:description" content="Squizit creates high-quality events, media, and software to make the world more fun to live in. Fantasies can be real, and we will do them justice.
-" />
-  <meta property="og:url" content="http://localhost:4000404.html" />
-  <meta property="og:image" content="http://localhost:4000img/cover.png" />
-  <meta property="article:publisher" content="https://www.facebook.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Squizit" />
-  <meta name="twitter:description" content="Squizit creates high-quality events, media, and software to make the world more fun to live in. Fantasies can be real, and we will do them justice.
-" />
-  <meta name="twitter:url" content="http://localhost:4000" />
-  <meta name="twitter:image" content="http://localhost:4000img/cover.png" />
-  <meta name="twitter:site" content="@Squizit" />
-  <meta name="twitter:creator" content="@Squizit" />
-  <meta property="og:image:width" content="2000" />
-  <meta property="og:image:height" content="666" />
-
-  <link rel="canonical" href="http://localhost:4000404.html" />
-  <link rel="alternate" type="application/rss+xml" title="Squizit" href="http://localhost:4000feed.xml">
-
-  <script type="application/ld+json">
-  
-{
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/404.html",
-  "headline": "Squizit",
-  "datePublished": "2017-12-19T17:54:43-07:00",
-  "dateModified": "2017-12-19T17:54:43-07:00",
-  "description": "Squizit creates high-quality events, media, and software to make the world more fun to live in. Fantasies can be real, and we will do them justice.
-",
-  "author": {
-    "@type": "Person",
-    "name": ""
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Squizit",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "http://localhost:4000img/logo.svg",
-      "width": "60",
-      "height": "60"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "http://localhost:4000img/logo.svg",
-    "height": "60",
-    "width": "60"
-  }
-}
-
-  </script>
-
-</head>
-
+  {% include head.html %}
   <body>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-104876043-1', 'auto');
+      ga('create', '{{ site.google-analytics-id }}', 'auto');
       ga('send', 'pageview');
     </script>
     <div class="logo">
@@ -110,27 +33,7 @@
       <h1><a href="#">Play</a><div class="arrow-right"></div></h1>
     </div>
     <div class="content">
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>That means the page you were looking for isn't here.</strong></p>
-  <p>I blame Micahel.</p>
-</div>
-
+      {{ content }}
     </div>
     <div class="info-button">
       <a href="#">

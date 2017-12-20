@@ -1,1 +1,11 @@
-
+---
+layout: default
+---
+<div class="post">
+  <h1>{{page.title}}</h1>
+  <div class="post-img" style="background-image:url('/img/post/{{ page.image }}')"></div>
+  <div class="post-info">
+    Posted in {{ page.category | capitalize }} | Posted <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
+  </div>
+  {{content}}
+</div>
