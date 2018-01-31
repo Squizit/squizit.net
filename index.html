@@ -7,13 +7,35 @@ layout: default
 <div class="homepage">
   {% for post in site.posts %}
      {% if post.featured == true %}
-       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><div class="arrow-right"></div></h1>
-       <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-       </div>
-       <div class="post-info">
-         Posted in {{ post.category | capitalize }} | Posted <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
-       </div>
+     <div class="post-item featured">
+       <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
+           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
+           <div class="post-info">
+            <span class="name">{{ post.type | capitalize }} /</span> <span class="value">{{ post.category | capitalize }} /</span>
+            <br />
+            <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
+           </div>
+         </div>
+         </a>
+     </div>
        {% break %}
+     {% endif %}
+  {% endfor %}
+  {% for post in site.posts %}
+     {% if post.featured == false %}
+     <div class="post-item">
+       <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
+           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
+           <div class="post-info">
+            <span class="name">{{ post.type | capitalize }} /</span> <span class="value">{{ post.category | capitalize }} /</span>
+            <br />
+            <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
+           </div>
+         </div>
+         </a>
+     </div>
      {% endif %}
   {% endfor %}
 </div>

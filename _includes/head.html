@@ -12,7 +12,12 @@
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  {% if include.color %}
+  {% capture css_location %}css/style-{{ include.color }}.css{% endcapture %}
+  <link rel="stylesheet" href="{{ css_location | absolute_url }}" />
+  {% else %}
   <link rel="stylesheet" href="{{ 'css/style.css' | absolute_url }}" />
+  {% endif %}
 
   <meta name="theme-color" content="#{{ site.theme-color }}">
 

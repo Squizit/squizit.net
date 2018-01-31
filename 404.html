@@ -14,11 +14,40 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
+  .gsc-control-cse {
+    background: none;
+    border: none;
+  }
+  #gsc-i-id1 {
+    background: none !important;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #4CAF50 !important;
+    color: #eee;
+    text-indent: 0 !important;
+  }
+  #gsc-i-id1::placeholder {
+    color:#333;
+  }
 </style>
 
 <div class="container">
   <h1>404</h1>
 
   <p><strong>That means the page you were looking for isn't here.</strong></p>
-  <p>I blame Micahel.</p>
+  <p>It probably was moved, deleted, or maybe someone gave you the wrong link. You can try searching for it.</p>
+  <script>
+    (function() {
+      var cx = '002388243569704546113:cbh9vowiv_k';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+      document.getElementById("gsc-i-id1").placeholder = "Type name here..";
+    })();
+  </script>
+  <gcse:search></gcse:search>
 </div>
