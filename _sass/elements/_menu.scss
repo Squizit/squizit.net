@@ -1,12 +1,15 @@
 // Style for main menu on the left
 
 .menu {
-  top: 32px;
+  // position: sticky;
+  // top: 32px;
   float: left;
   z-index: 0;
-  margin: 32px 0 0 32px;
+  margin: 16px 0 0 32px;
   width: 400px;
-  position: sticky;
+  position: fixed;
+
+  @import "logo";
 
   h1 {
     margin: 0;
