@@ -1,0 +1,48 @@
+# This document defines the colors of the different themes (except for the default green).
+# A style-<color>.scss file must exist added for each color that sets the SCSS variables
+
+# For now, green is default
+# green:
+#   background: '#333'
+#   foreground: '#eee'
+#   muted: '#666'
+#
+#   primary: '#4CAF50'
+#   secondary: '#81C784'
+#   tertiary: '#C8E6C9'
+
+red:
+  background: '#333'
+  foreground: '#eee'
+  muted: '#666'
+
+  primary: '#E55359'
+  secondary: '#E38E92'
+  tertiary: '#E1B4B6'
+
+blue:
+  background: '#333'
+  foreground: '#eee'
+  muted: '#666'
+
+  primary: '#4D89E1'
+  secondary: '#82A8E0'
+  tertiary: '#AFC7EA'
+
+purple:
+  background: '#333'
+  foreground: '#eee'
+  muted: '#666'
+
+  primary: '#8264FF'
+  secondary: '#B0A4E2'
+  tertiary: '#D9D0FF'
+
+yellow:
+  background: '#333'
+  foreground: '#eee'
+  muted: '#666'
+
+  primary: '#E0DA45'
+  secondary: '#DAD676'
+  tertiary: '#F2EFB8'

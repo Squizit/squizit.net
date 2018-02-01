@@ -1,0 +1,123 @@
+// Style for homepage content
+
+.homepage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .post-item {
+    width: 50%;
+    padding: 16px 16px 0 0;
+    box-sizing: border-box;
+    display: inline-block;
+
+    &.featured {
+      width: 100%;
+    }
+
+    .post-link {
+      animation: none !important;
+
+      &:hover .img {
+        background-color: #000;
+        filter: brightness(1) grayscale(0);
+
+        .post-info {
+          .name {
+            left: 0;
+          }
+
+          .value {
+            transition: left 0.5s !important;
+            left: 0;
+          }
+
+          .date {
+            transition: left 0.3s 0.4s !important;
+            left: 0;
+          }
+        }
+      }
+
+      .img {
+        transition: background-color 0.2s, opacity 0.2s, filter 0.2s;
+        filter: brightness(0.7) grayscale(1);
+        background-color: $background;
+        background-blend-mode: screen;
+        height: 500px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        h1 {
+          margin: 0 0 0 16px;
+          line-height: 128px;
+          transition: color 0.5s;
+          font-weight: normal;
+          color: #eee;
+          text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+
+          & .arrow-right {
+            margin: 0 0 10px 32px;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            transition: border-color 0.5s;
+            border-style: solid;
+            border-width: 25px 0 25px 43.3px;
+            border-color: transparent transparent transparent #eee;
+          }
+        }
+
+        .post-info {
+          position: absolute;
+          bottom: 16px;
+          left: 16px;
+          overflow: hidden;
+          font-family: 'Bebas Neue';
+          font-weight: 200;
+          font-size: 24px;
+          text-shadow: 0 0 5px #333;
+
+          .name {
+            transition: left 0.2s;
+            position: relative;
+            color: $primary;
+            left: -300px;
+          }
+
+          .value {
+            transition: left 0.2s;
+            position: relative;
+            color: $secondary;
+            left: -300px;
+          }
+
+          .date {
+            transition: left 0.2s;
+            position: relative;
+            color: $tertiary;
+            left: -300px;
+          }
+        }
+      }
+
+      &:hover h1 {
+        animation-name: flicker;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        text-shadow: 0 0 5px #333;
+        color: $secondary;
+
+        & > .arrow-right {
+          animation-name: flicker;
+          animation-duration: 0.2s;
+          animation-iteration-count: 1;
+          border-color: transparent transparent transparent $secondary;
+        }
+      }
+    }
+  }
+}

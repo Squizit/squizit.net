@@ -6,10 +6,9 @@
 
 title: Squizit
 timezone: America/Denver
-email: your-email@example.com
+email: contact@squizit.net
 description: > # this means to ignore newlines until "baseurl:"
-  Squizit creates high-quality events, media, and software to make the world
-  more fun to live in. Fantasies can be real, and we will do them justice.
+  We are a group of creators who want to share what me make.
 baseurl: "" # the subpath of your site, e.g. /blog
 cover: img/cover.png # Default image shown in social media
 logo: img/logo.svg

@@ -1,0 +1,47 @@
+// Style for a post page
+
+.post {
+  .post-img {
+    height: 500px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .post-title {
+    font-weight: normal;
+    color: $tertiary;
+  }
+
+  .post-info {
+    margin-top: -16px;
+    overflow: hidden;
+    font-family: 'Bebas Neue';
+    font-weight: 200;
+    font-size: 24px;
+    text-shadow: 0 0 5px #333;
+
+    .name {
+      position: relative;
+      color: $primary;
+    }
+
+    .value {
+      position: relative;
+      color: $secondary;
+    }
+
+    .date {
+      font-size: 20px;
+      position: relative;
+      color: $tertiary;
+    }
+  }
+
+  .post-content {
+    width: 900px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,11 @@
+---
+---
+$background: unquote('{{ site.data.colors.blue.background }}');
+$foreground: unquote('{{ site.data.colors.blue.foreground }}');
+$muted: unquote('{{ site.data.colors.blue.muted }}');
+
+$primary: unquote('{{ site.data.colors.blue.primary }}');
+$secondary: unquote('{{ site.data.colors.blue.secondary }}');
+$tertiary: unquote('{{ site.data.colors.blue.tertiary }}');
+
+@import 'base';

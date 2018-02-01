@@ -1,11 +1,11 @@
 ---
 ---
-$background: #333;
-$foreground: #eee;
-$muted: #666;
+$background: unquote('{{ site.data.colors.yellow.background }}');
+$foreground: unquote('{{ site.data.colors.yellow.foreground }}');
+$muted: unquote('{{ site.data.colors.yellow.muted }}');
 
-$primary: #E0DA45;
-$secondary: #DAD676;
-$tertiary: #F2EFB8;
+$primary: unquote('{{ site.data.colors.yellow.primary }}');
+$secondary: unquote('{{ site.data.colors.yellow.secondary }}');
+$tertiary: unquote('{{ site.data.colors.yellow.tertiary }}');
 
 @import 'base';

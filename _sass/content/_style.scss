@@ -1,0 +1,62 @@
+// Styles for all editable content
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+%header {
+  font-family: 'Bebas Neue';
+  text-shadow: -1px -1px 0 $background, 1px -1px 0 $background, -1px 1px 0 $background, 1px 1px 0 $background;
+  text-decoration: none;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+h1 {
+  @extend %header;
+  color: $muted;
+  font-size: 7em;
+  font-weight: bold;
+}
+
+h2 {
+  @extend %header;
+  color: $primary;
+  font-size: 6em;
+  font-weight: normal;
+}
+
+h3 {
+  @extend %header;
+  color: $secondary;
+  font-size: 5em;
+  font-weight: 300;
+}
+
+h4 {
+  @extend %header;
+  color: $tertiary;
+  font-size: 4em;
+  font-weight: 200;
+}
+
+h5 {
+  @extend %header;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+h6 {
+  @extend %header;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+hr {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px dotted $muted;
+  background: none;
+}

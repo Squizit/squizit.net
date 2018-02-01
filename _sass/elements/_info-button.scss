@@ -1,0 +1,38 @@
+// Style for info button in right hand corner
+
+.info-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  .circ {
+    fill: $primary;
+    r: 35;
+    transition: fill 0.2s;
+  }
+
+  .circa {
+    r: 20;
+    fill: none;
+    stroke: $secondary;
+    stroke-width: 2;
+    animation-duration: 5s;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 750;
+    transform-origin: 50% 50%;
+  }
+
+  .info:hover > .circa {
+    opacity: 1;
+    animation: infotrace 0.4s 0.2s ease-in-out 1;
+    transform: rotate(-90deg);
+  }
+
+  .info:hover > .circ {
+    opacity: 1;
+    fill: $secondary;
+    animation-name: flicker;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+  }
+}

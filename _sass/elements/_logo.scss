@@ -1,0 +1,20 @@
+// Style for Squizit Logo
+
+.logo {
+  .full-logo {
+    max-width: 1200px;
+    margin: 32px 32px 0;
+
+    .letter {
+      transition: fill 0.2s;
+      fill: $muted;
+    }
+
+    &:hover > #Logo > .letter {
+      fill: $primary!important;
+      animation-name: flicker;
+      animation-duration: 0.2s;
+      animation-iteration-count: 1;
+    }
+  }
+}

@@ -1,5 +1,10 @@
-- title: Home
-  url:
+main:
 
-- title: About
-  url: about
+- title: Design
+  url: /design
+
+- title: Create
+  url: /create
+
+- title: Play
+  url: /play
