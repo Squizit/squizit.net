@@ -11,6 +11,9 @@
 * Add todo to pages and posts
 * Post creator commandline tool
 * Menu items show their different colors on hover (for Design, Create, Play)
-* Menu items have submenu
+* Menu items have submenu (moves other items downward and reveals submenu)
+  * Logo reveals social media links?
 * Image optimization (somehow)
 * Pagination? Ajax load?
+* Post image captions (featured image and normal image)
+* Clean up spacing (later)
