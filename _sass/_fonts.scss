@@ -2,6 +2,30 @@
 
 @font-face {
   font-family: 'Bebas Neue';
+  font-weight: 100;
+  src: url('/css/fonts/BebasNeueThin.WOFF')
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: 200;
+  src: url('/css/fonts/BebasNeueLight.WOFF')
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: 300;
+  src: url('/css/fonts/BebasNeueBook.WOFF')
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
   font-weight: normal;
-  src: url('/css/BebasNeue.woff')
+  src: url('/css/fonts/BebasNeueRegular.WOFF')
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  src: url('/css/fonts/BebasNeueBold.WOFF')
 }
