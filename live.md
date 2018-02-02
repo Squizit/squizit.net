@@ -1,6 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /design/
+permalink: /live/
 color: blue
 ---
