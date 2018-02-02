@@ -6,6 +6,7 @@ date:   2018-02-1 12:49:46 -0400
 category: test
 image: md-test.jpg
 featured: false
+color: white
 ---
 *This is a test page for our text editing system*
 
