@@ -6,6 +6,7 @@ date:   2017-09-18 17:15:46 -0400
 category: update
 image: new-website.jpg
 featured: true
+color: light
 ---
 
 Squizit is getting a new website! Right now you are looking at the beta version of our new website. Exciting right?! Along with the fancy new style (with almost no Javascript to be found), comes some much needed functionality that we didn't previously have.

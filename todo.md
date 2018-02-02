@@ -17,3 +17,4 @@
 * Pagination? Ajax load?
 * Post image captions (featured image and normal image)
 * Clean up spacing (later)
+* Show current navbar selection

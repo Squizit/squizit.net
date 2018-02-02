@@ -46,3 +46,21 @@ yellow:
   primary: '#E0DA45'
   secondary: '#DAD676'
   tertiary: '#F2EFB8'
+
+white:
+  background: '#333'
+  foreground: '#eee'
+  muted: '#666'
+
+  primary: '#eee'
+  secondary: '#ccc'
+  tertiary: '#999'
+
+light:
+  background: '#eee'
+  foreground: '#333'
+  muted: '#999'
+
+  primary: '#333'
+  secondary: '#888'
+  tertiary: '#ccc'
