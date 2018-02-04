@@ -4,39 +4,5 @@ layout: default
 <span class="NOTE-GOAT">
   <b>INERESTING FACT!</b> This site is not done yet. <br /> Feel free to take a look around at what has been finished so far.
 </span>
-<div class="homepage">
-  {% for post in site.posts %}
-     {% if post.featured == true %}
-     {% assign featured_id = post.id %}
-     <div class="post-item featured">
-       <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
-         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
-           <div class="post-info">
-            <span class="name">{{ post.type | capitalize }} /</span> <span class="value">{{ post.category | capitalize }} /</span>
-            <br />
-            <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
-           </div>
-         </div>
-         </a>
-     </div>
-       {% break %}
-     {% endif %}
-  {% endfor %}
-  {% for post in site.posts %}
-     {% if post.id != featured_id %}
-     <div class="post-item">
-       <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
-         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
-           <div class="post-info">
-            <span class="name">{{ post.type | capitalize }} /</span> <span class="value">{{ post.category | capitalize }} /</span>
-            <br />
-            <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
-           </div>
-         </div>
-         </a>
-     </div>
-     {% endif %}
-  {% endfor %}
-</div>
+
+{% include feed.html %}

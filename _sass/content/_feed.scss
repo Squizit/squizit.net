@@ -1,6 +1,6 @@
-// Style for homepage content
+// Style for feed
 
-.homepage {
+.feed {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -24,12 +24,18 @@
 
         .post-info {
           .name {
+            transition: left 0.5s !important;
             left: 0;
           }
 
           .value {
-            transition: left 0.5s !important;
+            transition: left 0.5s 0.1s !important;
             left: 0;
+
+            + .value {
+              transition: left 0.5s 0.2s !important;
+            }
+
           }
 
           .date {
@@ -93,6 +99,11 @@
             position: relative;
             color: $secondary;
             left: -300px;
+
+            + .value {
+              color: $tertiary;
+            }
+
           }
 
           .date {

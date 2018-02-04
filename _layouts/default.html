@@ -33,7 +33,8 @@
         </a>
       </div>
       {% for item in site.data.navigation.main %}
-      <h1><a href="{{ item.url }}">{{ item.title }}</a><div class="arrow-right"></div></h1>
+      {% assign lc-title = item.title | downcase %}
+      <h1 {% if page.nav == lc-title %}class="active"{% endif %}><a href="{{ item.url }}">{{ item.title }}</a><div class="arrow-right"></div></h1>
       {% endfor %}
     </div>
     <div class="content">

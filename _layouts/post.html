@@ -1,13 +1,37 @@
 ---
 layout: default
+type: post
+title: "Unnamed"
+date:   2000-1-1 1:00:00 -0400
+category: uncategorized
+image: lorem.jpg
 ---
+
+{% comment %}
+All options for posts
+=====================
+
+type:
+title: ""
+date:
+category:
+image:
+featured:
+feed-featured:
+color:
+feed: // Determines feed post will appear in (along with the main page)
+nav: // Highlights a nav item
+{% endcomment %}
+
 <div class="post">
   {% if page.image %}
-  <div class="post-img" style="background-image:url('/img/post/{{ page.image }}')"></div>
+  <div class="post-img">
+    <div style="background-image:url('/img/post/{{ page.image }}')"></div>
+  </div>
   {% endif %}
   <h1 class="post-title">{{page.title}}</h1>
   <div class="post-info">
-   <span class="name">{{ page.type | capitalize }} /</span> <span class="value">{{ page.category | capitalize }} /</span>
+   <span class="name">{{ page.type | capitalize }} / </span>{% if page.feed %}<span class="value">{{ page.feed | capitalize }} / </span>{% endif %}<span class="value">{{ page.category | capitalize }} / </span>
    <br />
    <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
   </div>

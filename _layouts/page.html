@@ -1,8 +1,23 @@
 ---
 layout: default
 ---
-<div class="post">
-  <div class="post-content">
-    {{content}}
+{% comment %}
+All options for pages
+=====================
+
+title:
+permalink:
+color:
+nav: // Highlights a nav item
+feed: // Defines page feed
+{% endcomment %}
+
+<div class="page">
+  <div class="page-content">
+    {{ content }}
   </div>
 </div>
+
+{% if page.feed %}
+{% include feed.html feed=page.feed %}
+{% endif %}

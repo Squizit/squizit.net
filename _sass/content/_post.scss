@@ -1,15 +1,16 @@
 // Style for a post page
 
 .post {
-  padding-top: 16px;
 
   .post-img {
-    height: 500px;
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    padding-top: 16px;
+    div {
+      height: 500px;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .post-title {
@@ -32,6 +33,10 @@
     .value {
       position: relative;
       color: $secondary;
+
+      + .value {
+        color: $tertiary;
+      }
     }
 
     .date {

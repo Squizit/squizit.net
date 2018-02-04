@@ -48,14 +48,15 @@ a {
 // Main content of the site
 .content {
   position: relative;
-  margin: 32px 144px 0 432px;
+  margin: 32px 144px 16px 432px;
 
   ////////////////////
   // CONTENT STYLES //
   ////////////////////
   @import "content/style";
-  @import "content/homepage";
+  @import "content/feed";
   @import "content/post";
+  @import "content/page";
 }
 
 /////////////////////////
