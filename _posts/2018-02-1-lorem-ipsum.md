@@ -5,8 +5,9 @@ title:  "Lorem Ipsum"
 date:   2018-02-1 15:16:46 -0400
 category: test
 image: lorem.jpg
-featured: false
 color: blue
+feed: live
+nav: live
 ---
 *This is a test page for paragraphs*
 

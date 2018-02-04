@@ -15,7 +15,16 @@
     margin: 0;
     line-height: 128px;
 
-    & > a {
+    &.active {
+      a {
+        color: $secondary;
+      }
+      .arrow-right {
+        display: inline-block;
+      }
+    }
+
+    a {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 100px;
       font-weight: normal;
@@ -51,18 +60,18 @@
           animation-duration: 0.2s;
           animation-iteration-count: 1;
           display: inline-block;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 25px 0 25px 43.3px;
-          border-color: transparent transparent transparent $secondary;
         }
       }
     }
 
-    > .arrow-right {
+    .arrow-right {
       display: none;
       margin: 0 0 10px 16px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 0 25px 43.3px;
+      border-color: transparent transparent transparent $secondary;
     }
   }
 }
