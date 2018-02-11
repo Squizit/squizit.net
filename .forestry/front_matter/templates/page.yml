@@ -16,21 +16,28 @@ fields:
   config:
     required: true
   description: The title of the page. Shown in browser title and search results.
-- name: color
+- type: select
+  config:
+    source:
+      type: datafiles
+      file: _data-colors-yml
+      path: colors
   label: Color
-  type: text
-  hidden: false
-  default: ''
+  name: color
+  description: The color sheme of the page
 - name: feed
   label: Feed
   type: text
   hidden: false
   default: ''
+  description: If the page will have a feed of  posts, put the name of the feed here.
+    Leave blank for no feed.
 - name: nav
-  label: Nav
+  label: Navigation highlighting
   type: text
   hidden: false
   default: ''
+  description: Name of nav item to highlight in the navigation sidebar
 - name: permalink
   label: Permalink
   type: text
