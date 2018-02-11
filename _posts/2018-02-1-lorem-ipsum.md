@@ -1,13 +1,14 @@
 ---
 layout: post
 type: post
-title:  "Lorem Ipsum"
-date:   2018-02-1 15:16:46 -0400
-category: test
+title: Lorem Ipsum
+date: 2018-02-01 19:16:46 +0000
 image: lorem.jpg
 color: blue
 feed: live
 nav: live
+categories: test
+category: Test
 ---
 *This is a test page for paragraphs*
 
