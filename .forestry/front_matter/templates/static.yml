@@ -1,0 +1,10 @@
+---
+hide_body: true
+fields:
+- type: text
+  label: Layout
+  name: layout
+  description: default
+  hidden: true
+  config:
+    required: true
