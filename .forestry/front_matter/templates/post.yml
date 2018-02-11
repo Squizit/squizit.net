@@ -51,11 +51,16 @@ fields:
   config:
     required: true
   description: Audio, video, update, name of project, ext...
-- name: color
-  label: Color
-  type: text
-  hidden: false
-  default: ''
+- type: select
+  name: color
+  config:
+    source:
+      type: datafiles
+      file: _data-colors-yml
+      path: colors
+  label: Theme
+  description: "(Optional) The color scheme of the page. Try to match the feed color
+    scheme."
 - name: nav
   label: Nav
   type: text
