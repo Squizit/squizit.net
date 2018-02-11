@@ -32,15 +32,10 @@ fields:
   default: ''
   description: If the page will have a feed of  posts, put the name of the feed here.
     Leave blank for no feed.
-- type: select
+- type: text
   name: nav
-  config:
-    source:
-      type: datafiles
-      file: _data-navigation-yml
-      path: navigation
-  label: Navigation Highlight
-  description: Name of nav item to highlight in the navigation sidebar
+  label: Active Nav Item
+  description: The nav item to show as active in the navigation sidebar
 - name: permalink
   label: Permalink
   type: text
