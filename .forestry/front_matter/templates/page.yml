@@ -22,7 +22,7 @@ fields:
       type: datafiles
       file: _data-colors-yml
       path: colors
-  label: Color
+  label: Theme
   name: color
   description: The color sheme of the page
 - name: feed
