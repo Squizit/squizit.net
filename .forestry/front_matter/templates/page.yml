@@ -4,13 +4,18 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: default
+  config:
+    required: true
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
+  description: The title of the page. Shown in browser title and search results.
 - name: color
   label: Color
   type: text
