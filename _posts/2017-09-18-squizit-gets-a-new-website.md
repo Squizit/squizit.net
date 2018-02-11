@@ -1,12 +1,16 @@
 ---
 layout: post
 type: post
-title:  "Squizit is getting a new website!"
-date:   2017-09-18 17:15:46 -0400
-category: update
+title: Squizit is getting a new website!
+date: 2017-09-18 21:15:46 +0000
 image: new-website.jpg
 featured: true
 color: light
+categories: update
+category: Update
+feed: ''
+nav: ''
+feed-featured: false
 ---
 
 Squizit is getting a new website! Right now you are looking at the beta version of our new website. Exciting right?! Along with the fancy new style (with almost no Javascript to be found), comes some much needed functionality that we didn't previously have.
