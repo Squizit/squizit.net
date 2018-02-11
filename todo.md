@@ -16,3 +16,5 @@
 * Pagination? Ajax load?
 * Post image captions (featured image and normal image)
 * Clean up spacing (later)
+* Add option to hide from front page
+* Have posts default to their feed color schemes
