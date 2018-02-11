@@ -1,0 +1,63 @@
+---
+hide_body: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: post
+  config:
+    required: true
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+  description: Title of post
+- name: date
+  label: Date Published
+  type: datetime
+  hidden: false
+  default: Invalid date
+  config:
+    required: true
+- name: image
+  label: Featured Image
+  type: file
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: Post
+  description: Shown as <type> / (feed) / <category> on page
+  config:
+    required: true
+- name: feed
+  label: Feed
+  type: text
+  hidden: false
+  default: ''
+  description: Determines which page the post will appear on (plus the front page).
+    Use the feed name defined in the page you are targeting. Leave blank for front  page
+    only.
+- type: text
+  name: category
+  label: Category
+  hidden: false
+  config:
+    required: true
+  description: Audio, video, update, name of project, ext...
+- name: color
+  label: Color
+  type: text
+  hidden: false
+  default: ''
+- name: nav
+  label: Nav
+  type: text
+  hidden: false
+  default: ''
