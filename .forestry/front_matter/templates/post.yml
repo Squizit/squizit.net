@@ -49,7 +49,7 @@ fields:
   label: Category
   hidden: false
   config:
-    required: true
+    required: false
   description: Audio, video, update, name of project, ext...
 - type: select
   name: color
