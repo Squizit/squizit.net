@@ -20,6 +20,16 @@ body {
   color: $foreground;
 }
 
+::selection {
+  color: $foreground;
+  background: $primary;
+}
+
+::-moz-selection {
+  color: $foreground;
+  background: $primary;
+}
+
 a {
   text-decoration: none;
   color: $primary;

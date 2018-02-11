@@ -11,6 +11,16 @@
 #   secondary: '#81C784'
 #   tertiary: '#C8E6C9'
 
+# THIS MAY TURN INTO THE DEFAULT WITH A FEW TWEAKS
+bright:
+  background: '#4CAF50'
+  foreground: '#999'
+  muted: '#999'
+
+  primary: '#eee'
+  secondary: '#ccc'
+  tertiary: '#999'
+
 red:
   background: '#333'
   foreground: '#eee'
