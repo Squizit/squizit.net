@@ -32,6 +32,7 @@ fields:
   type: file
   hidden: false
   default: ''
+  description: "*Required"
 - name: type
   label: Type
   type: text
@@ -45,9 +46,9 @@ fields:
   type: text
   hidden: false
   default: ''
-  description: Determines which page the post will appear on (plus the front page).
-    Use the feed name defined in the page you are targeting. Leave blank for front  page
-    only.
+  description: "(Optional) Determines which page the post will appear on (plus the
+    front page). Use the feed name defined in the page you are targeting. Leave blank
+    for front  page only."
 - type: text
   name: category
   label: Category
@@ -70,7 +71,7 @@ fields:
   type: text
   hidden: false
   default: ''
-  description: The nav item to show as active in the navigation sidebar
+  description: "(Optional) The nav item to show as active in the navigation sidebar"
 - type: boolean
   name: featured
   label: Featured on Site
