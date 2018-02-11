@@ -70,3 +70,13 @@ fields:
   hidden: false
   default: ''
   description: The nav item to show as active in the navigation sidebar
+- type: boolean
+  name: featured
+  label: Featured on Site
+  description: Feature on feed and homepage (must be newest featured post to appear
+    in featured spot)
+- type: boolean
+  name: feed-featured
+  label: Featured on Feed
+  description: Feature on feed only (not required if post is featured on site) (must
+    be newest featured post to appear in featured spot)
