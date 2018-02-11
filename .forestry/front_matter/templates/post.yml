@@ -62,7 +62,8 @@ fields:
   description: "(Optional) The color scheme of the page. Try to match the feed color
     scheme."
 - name: nav
-  label: Nav
+  label: Active Nav Item
   type: text
   hidden: false
   default: ''
+  description: The nav item to show as active in the navigation sidebar
