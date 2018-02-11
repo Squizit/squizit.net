@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/2018-02-1-markdown-demo.md
 - _posts/2018-02-1-lorem-ipsum.md
 hide_body: false
 fields:

@@ -1,12 +1,15 @@
 ---
 layout: post
 type: post
-title:  "Markdown Demo"
-date:   2018-02-1 12:49:46 -0400
-category: test
+title: Markdown Demo
+date: 2018-02-01 16:49:46 +0000
 image: md-test.jpg
 featured: false
 color: white
+categories: test
+category: test
+feed: ''
+nav: ''
 ---
 *This is a test page for our text editing system*
 
