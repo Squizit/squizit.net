@@ -1,5 +1,8 @@
 # This document defines the colors of the different themes (except for the default green).
+
 # A style-<color>.scss file must exist added for each color that sets the SCSS variables
+# This is done in this way for 2 reasons. First to allow easy modification to the themes
+# and second to allow referencing these colors from Liquid in pages.
 
 # For now, green is default
 # green:
