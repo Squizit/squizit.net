@@ -14,6 +14,14 @@ $primary: #4CAF50 !default; // Primary Highlight Color
 $secondary: #81C784 !default; // Secondary Highlight Color
 $tertiary: #C8E6C9 !default; // Tertiary Highlight Color
 
+$menu: $primary !default; // Menu color
+$menu-hover: $secondary !default; // Menu hover color
+
+$logo: $muted !default; // Logo color
+$logo-hover: $primary !default; // Logo color hover
+
+$article-header: $tertiary !default; // Title color for a post
+
 body {
   background: $background;
   font-family: 'Roboto', sans-serif;

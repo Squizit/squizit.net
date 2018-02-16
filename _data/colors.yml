@@ -64,3 +64,22 @@ light:
   primary: '#333'
   secondary: '#888'
   tertiary: '#ccc'
+
+  article-header: '#999'
+
+inverted:
+  background: '#eee'
+  foreground: '#111'
+  muted: '#888'
+
+  primary: '#4CAF50'
+  secondary: '#81C784'
+  tertiary: '#C8E6C9'
+
+  menu: '#888'
+  menu-hover: '#4CAF50'
+
+  logo: '#4CAF50'
+  logo-hover: '#81C784'
+
+  article-header: '#4CAF50'

@@ -7,11 +7,11 @@
 
     .letter {
       transition: fill 0.2s;
-      fill: $muted;
+      fill: $logo;
     }
 
     &:hover > #Logo > .letter {
-      fill: $primary!important;
+      fill: $logo-hover !important;
       animation-name: flicker;
       animation-duration: 0.2s;
       animation-iteration-count: 1;
