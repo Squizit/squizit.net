@@ -44,16 +44,18 @@
 
 @keyframes infotrace {
   0% {
-    r: 40;
+    stroke-dashoffset: 750;
+    visibility: visible;
   }
 
   99% {
     stroke-dashoffset: 250;
-    r: 40;
+    visibility: visible;
   }
 
   100% {
-    r: 20;
+    stroke-dashoffset: 250;
+    visibility: hidden;
   }
 }
 @keyframes moveDown {

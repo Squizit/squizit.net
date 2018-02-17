@@ -118,6 +118,8 @@
           @include media(1500px) {
             border-width: 15px 0 15px 26.0px;
           }
+          filter: drop-shadow(0 0 0px rgba(25, 25, 25, 0));
+          transform: scale(0);
           position: absolute;
           right: 100%;
           bottom: 24px;
@@ -128,7 +130,7 @@
           border-style: solid;
           border-width: 25px 0 25px 43.3px;
           border-color: transparent transparent transparent $primary;
-          transition: opacity 0.2s, visibility 0s 0.2s, right 0s 0.2s, border-color 0s 0.2s;
+          transition: opacity 0.2s, visibility 0s 0.2s, right 0s 0.2s, border-color 0s 0.2s, filter 0.2s, transform 0.2s;
         }
       }
 
@@ -171,10 +173,12 @@
         }
 
         .arrow-right {
+          filter: drop-shadow(0 0 4px rgba(25, 25, 25, 0.4));
+          transform: scale(1);
           visibility: visible;
           opacity: 1;
           right: 16px;
-          transition: border-color 0.5s, right 0.5s, opacity 0.5s !important;
+          transition: border-color 0.5s, right 0.5s, opacity 0.5s, filter 0.3s 0.2s !important;
         }
       }
 

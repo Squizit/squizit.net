@@ -1,6 +1,9 @@
 // Style for info button in right hand corner
 
 .info-button {
+  @include media(800px) {
+    filter: drop-shadow(0 0 15px darken(rgba(red($primary), green($primary), blue($primary), 0.5), 30%));
+  }
   position: fixed;
   right: 16px;
   bottom: 16px;
@@ -12,7 +15,7 @@
   }
 
   .circa {
-    r: 20;
+    visibility: hidden;
     fill: none;
     stroke: $secondary;
     stroke-width: 2;

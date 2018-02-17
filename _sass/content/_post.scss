@@ -5,6 +5,9 @@
   .post-img {
     padding-top: 16px;
     div {
+      @include media(1100px) {
+        height: 250px;
+      }
       height: 500px;
       border-radius: 10px;
       background-repeat: no-repeat;
@@ -14,8 +17,15 @@
   }
 
   .post-title {
+    @include media(1500px) {
+      font-size: 5em;
+      text-align: center;
+    }
     font-weight: normal;
     color: $article-header;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-x:hidden;
   }
 
   .post-info {
@@ -40,6 +50,10 @@
     }
 
     .date {
+      @include media(1500px) {
+        float: right;
+        margin-top: -26px;
+      }
       font-size: 20px;
       position: relative;
       color: $tertiary;
@@ -47,6 +61,9 @@
   }
 
   .post-content {
+    @include media(1500px) {
+      width: 100%;
+    }
     width: 900px;
     margin: 0 auto;
   }
