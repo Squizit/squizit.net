@@ -26,6 +26,19 @@ body {
   background: $background;
   font-family: 'Roboto', sans-serif;
   color: $foreground;
+  @include media(800px) {
+    overflow-x: hidden;
+  }
+}
+
+*::selection {
+  color: #eee;
+  background: $primary;
+}
+
+*::-moz-selection {
+  color: #eee;
+  background: $primary;
 }
 
 a {
@@ -41,20 +54,14 @@ a {
   }
 }
 
-// Temporary Unfinished Notice
-.NOTE-GOAT {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 8px;
-  z-index: 10000;
-  text-shadow: 0 0 3px #333;
-}
-
 // Main content of the site
 .content {
+  @include media(1100px) {
+    margin: 32px 144px 16px 332px;
+  }
+  @include media(800px) {
+    margin: 144px 8px 32px 8px;
+  }
   position: relative;
   margin: 32px 144px 16px 432px;
 

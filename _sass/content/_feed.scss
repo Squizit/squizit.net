@@ -6,6 +6,11 @@
   flex-wrap: wrap;
 
   .post-item {
+    @include media(1100px) {
+      width: 100%;
+      padding: 0;
+      margin: 8px 0;
+    }
     width: 50%;
     padding: 16px 16px 0 0;
     box-sizing: border-box;
@@ -18,34 +23,15 @@
     .post-link {
       animation: none !important;
 
-      &:hover .img {
-        background-color: #000;
-        filter: brightness(1) grayscale(0);
-
-        .post-info {
-          .name {
-            transition: left 0.5s !important;
-            left: 0;
-          }
-
-          .value {
-            transition: left 0.5s 0.1s !important;
-            left: 0;
-
-            + .value {
-              transition: left 0.5s 0.2s !important;
-            }
-
-          }
-
-          .date {
-            transition: left 0.3s 0.4s !important;
-            left: 0;
-          }
-        }
-      }
-
       .img {
+        @include media(1500px) {
+          height: 250px;
+          border-radius: 4px;
+        }
+        @include media(800px) {
+          filter: brightness(1) grayscale(0);
+          background-color: #000;
+        }
         transition: background-color 0.2s, opacity 0.2s, filter 0.2s;
         filter: brightness(0.7) grayscale(1);
         background-color: #333;
@@ -58,47 +44,60 @@
         position: relative;
 
         h1 {
-          margin: 0 0 0 16px;
-          line-height: 128px;
+          @include media(1500px) {
+            font-size: 4vw;
+          }
+          @include media(800px) {
+            font-size: 3em;
+          }
+          padding: 4px 16px 0 16px;
+          line-height: 1.2em;
           transition: color 0.5s;
           font-weight: normal;
           color: #eee;
           text-shadow: 0 0 25px rgba(25, 25, 25, 0.4);
-
-          & .arrow-right {
-            margin: 0 0 10px 32px;
-            display: inline-block;
-            width: 0;
-            height: 0;
-            transition: border-color 0.5s;
-            border-style: solid;
-            border-width: 25px 0 25px 43.3px;
-            border-color: transparent transparent transparent #eee;
-          }
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+          hyphens: auto;
+          overflow-x:hidden;
         }
 
         .post-info {
+          @include media(1500px) {
+            border-radius: 4px;
+            font-size: 1.2em;
+          }
           position: absolute;
           bottom: 16px;
           left: 16px;
           overflow: hidden;
           font-family: 'Bebas Neue', sans-serif;
           font-weight: 300;
-          font-size: 24px;
+          font-size: 1.5em;
           text-shadow: 0 0 5px rgba(25, 25, 25, 0.6);
 
+          %post-info-items {
+            @include media(800px) {
+              left: 0;
+              opacity: 1;
+            }
+            left: -300px;
+            opacity: 0;
+            position: relative;
+          }
+
           .name {
-            transition: left 0.2s;
+            @extend %post-info-items;
+            transition: left 0.2s, opacity 0.3s;
             position: relative;
             color: $primary;
-            left: -300px;
           }
 
           .value {
-            transition: left 0.2s;
+            @extend %post-info-items;
+            transition: left 0.2s, opacity 0.3s;
             position: relative;
             color: $secondary;
-            left: -300px;
 
             + .value {
               color: $tertiary;
@@ -107,28 +106,78 @@
           }
 
           .date {
-            transition: left 0.2s;
+            @extend %post-info-items;
+            transition: left 0.2s, opacity 0.3s;
             position: relative;
             color: $tertiary;
-            left: -300px;
           }
+        }
+
+        .arrow-right {
+          content: "";
+          @include media(1500px) {
+            border-width: 15px 0 15px 26.0px;
+          }
+          position: absolute;
+          right: 100%;
+          bottom: 24px;
+          visibility: hidden;
+          opacity: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 0 25px 43.3px;
+          border-color: transparent transparent transparent $primary;
+          transition: opacity 0.2s, visibility 0s 0.2s, right 0s 0.2s, border-color 0s 0.2s;
         }
       }
 
-      &:hover h1 {
-        animation-name: flicker;
-        animation-duration: 0.2s;
-        animation-iteration-count: 1;
-        text-shadow: 0 0 25px rgba(25, 25, 25, 0.6);
-        color: $secondary;
+      // HOVER
 
-        & > .arrow-right {
+      &:hover .img {
+        background-color: #000;
+        filter: brightness(1) grayscale(0);
+
+        h1 {
           animation-name: flicker;
           animation-duration: 0.2s;
           animation-iteration-count: 1;
-          border-color: transparent transparent transparent $secondary;
+          color: #eee;
+        }
+
+        .post-info {
+          .name {
+            transition: left 0.5s !important;
+            left: 0;
+            opacity: 1;
+          }
+
+          .value {
+            transition: left 0.5s 0.1s, opacity 0.5s 0.2s !important;
+            left: 0;
+            opacity: 1;
+
+            + .value {
+              transition: left 0.5s 0.2s, opacity 0.5s 0.3s !important;
+            }
+
+          }
+
+          .date {
+            transition: left 0.3s 0.4s, opacity 0.3s 0.5s !important;
+            left: 0;
+            opacity: 1;
+          }
+        }
+
+        .arrow-right {
+          visibility: visible;
+          opacity: 1;
+          right: 16px;
+          transition: border-color 0.5s, right 0.5s, opacity 0.5s !important;
         }
       }
+
     }
   }
 }

@@ -1,6 +1,13 @@
 // Styles for animated lines in the bottom left corner
 
 .lines {
+  @include media(800px) {
+    position: absolute;
+    width: 100%;
+    transform: rotateZ(-60deg);
+    top: 420px;
+    bottom:auto;
+  }
   position: fixed;
   z-index: -100;
   bottom: 0;

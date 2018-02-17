@@ -1,6 +1,18 @@
 // Style for main menu on the left
 
 .menu {
+  @include media(1100px) {
+    width: 300px;
+  }
+  @include media(800px) {
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 24px;
+    margin: 16px 8px;
+    float: none;
+    position: static;
+  }
   // position: sticky;
   // top: 32px;
   float: left;
@@ -13,7 +25,6 @@
 
   h1 {
     margin: 0;
-    line-height: 128px;
 
     &.active {
       a {
@@ -25,8 +36,16 @@
     }
 
     a {
+      @include media(1100px) {
+        font-size: 2em;
+        line-height: 1.3em;
+      }
+      @include media(800px) {
+        font-size: 20vw;
+      }
+      line-height: 1.5em;
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 100px;
+      font-size: 3em;
       font-weight: normal;
       text-shadow: -1px -1px 0 $background, 1px -1px 0 $background, -1px 1px 0 $background, 1px 1px 0 $background;
       position: relative;
@@ -65,6 +84,9 @@
     }
 
     .arrow-right {
+      @include media(1100px) {
+        border-width: 15px 0 15px 25.0px;
+      }
       display: none;
       margin: 0 0 10px 16px;
       width: 0;

@@ -15,3 +15,4 @@
 * Clean up spacing (later)
 * Add option to hide from front page
 * Have posts default to their feed color schemes
+* Make media-based stylesheet for print

@@ -1,6 +1,5 @@
 {% if include.feed %}
 
-
 <div class="feed">
   {% for post in site.posts %}
      {% if (post.featured == true or post.feed-featured == true) and post.feed == include.feed %}
@@ -8,12 +7,13 @@
      <div class="post-item featured">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
          <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
+           <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>
             <br />
             <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
            </div>
+           <div class="arrow-right"></div>
          </div>
          </a>
      </div>
@@ -25,12 +25,13 @@
      <div class="post-item">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
          <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
+           <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>
             <br />
             <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
            </div>
+           <div class="arrow-right"></div>
          </div>
          </a>
      </div>
@@ -49,12 +50,13 @@
      <div class="post-item featured">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
          <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
+           <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>
             <br />
             <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
            </div>
+           <div class="arrow-right"></div>
          </div>
          </a>
      </div>
@@ -66,12 +68,13 @@
      <div class="post-item">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
          <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
-           <h1>{{ post.title }}<div class="arrow-right"></div></h1>
+           <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>
             <br />
             <time class="date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
            </div>
+           <div class="arrow-right"></div>
          </div>
          </a>
      </div>
