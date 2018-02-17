@@ -6,8 +6,8 @@ email: contact@squizit.net
 description: > # this means to ignore newlines until "baseurl:"
   We are a group of creators who want to share what me make.
 baseurl: "" # the subpath of your site, e.g. /blog
-cover: img/cover.png # Default image shown in social media
-logo: img/logo.svg
+cover: /img/cover.png # Default image shown in social media
+logo: /img/squizit-icon.png
 
 google-analytics-id: UA-104876043-1
 
