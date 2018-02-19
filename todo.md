@@ -18,4 +18,4 @@
 * Have posts default to their feed color schemes
 * Make media-based stylesheet for print
 * FIX UP JSON-LD AND MAKE IT CONTEXT AWARE https://developers.google.com/search/docs/guides/search-gallery
-* Apperently people don't like the flashing links. Maybe remove?
+* Make link flashing effect only on arrow in main menu
