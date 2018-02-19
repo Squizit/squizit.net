@@ -1,4 +1,5 @@
 * **Mobile compatibility**
+  * Fix bugs
 * Make a ben.squizit.net git for ben.squizit.net after site is finished or profile pages
 * Content layout system for pages that can be referenced in the Markdown files (with custom html tags)
 * **Add copyright to footer**
