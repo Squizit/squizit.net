@@ -1,3 +1,5 @@
+* Change animations on tiles to something more optimized (like [this](https://go.deviantart.com/journal/Atomic-Blonde-Fan-Art-Contest-Semi-Finalists-713235990))
+
 * **Mobile compatibility**
   * Fix bugs
 * Make a ben.squizit.net git for ben.squizit.net after site is finished or profile pages
