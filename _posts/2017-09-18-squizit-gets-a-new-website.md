@@ -1,9 +1,10 @@
 ---
+title: Squizit is getting a new website!
+date: 2017-09-18 15:15:46 -06:00
+categories:
+- update
 layout: post
 type: post
-title:  "Squizit is getting a new website!"
-date:   2017-09-18 17:15:46 -0400
-category: update
 image: new-website.jpg
 featured: true
 color: light

@@ -1,36 +1,34 @@
-# Site settings
-
+---
 title: Squizit
 timezone: America/Denver
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: contact@squizit.net
-description: > # this means to ignore newlines until "baseurl:"
-  We are a group of creators who want to share what me make.
-baseurl: "" # the subpath of your site, e.g. /blog
-cover: /img/cover.png # Default image shown in social media
-logo: /img/squizit-icon.png
+description: 'We are a group of creators who want to share what me make.
 
+'
+baseurl: ''
+cover: "/img/cover.png"
+logo: "/img/squizit-icon.png"
 google-analytics-id: UA-104876043-1
-
-# Social
 twitter: Squizit
-github:  squizit
-facebook:
-
-# Build settings
+github: squizit
+facebook: 
 markdown: kramdown
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
-
+- jekyll-feed
+- jekyll-paginate
 sass:
-    style: compressed
-
+  style: compressed
 exclude:
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - readme.md
-  - todo.md
-
-# Other stuff
-theme-color: 4CAF50 # Has nothing to do with site colors
+- CNAME
+- Gemfile
+- Gemfile.lock
+- readme.md
+- todo.md
+theme-color: 4CAF50
