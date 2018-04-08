@@ -62,9 +62,9 @@
       }
 
       &:hover {
-        animation-name: flicker;
-        animation-duration: 0.2s;
-        animation-iteration-count: 1;
+        // animation-name: flicker;
+        // animation-duration: 0.2s;
+        // animation-iteration-count: 1;
         color: $menu-hover;
 
         &:before {
@@ -75,9 +75,9 @@
         }
 
         ~ .arrow-right {
-          animation-name: flicker;
-          animation-duration: 0.2s;
-          animation-iteration-count: 1;
+          // animation-name: flicker;
+          // animation-duration: 0.2s;
+          // animation-iteration-count: 1;
           display: inline-block;
         }
       }
