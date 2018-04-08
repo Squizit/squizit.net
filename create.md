@@ -1,7 +1,8 @@
 ---
-layout: page
 title: About
-permalink: /create/
+permalink: "/create/"
+layout: page
 color: red
 nav: create
 ---
+

@@ -1,7 +1,8 @@
 ---
-layout: page
 title: About
-permalink: /play/
+permalink: "/play/"
+layout: page
 color: purple
 nav: play
 ---
+

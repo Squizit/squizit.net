@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Squizit Live
-permalink: /live/
+permalink: "/live/"
+layout: page
 color: blue
 nav: live
 feed: live

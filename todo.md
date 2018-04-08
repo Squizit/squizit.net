@@ -1,4 +1,7 @@
+* Change animations on tiles to something more optimized (like [this](https://go.deviantart.com/journal/Atomic-Blonde-Fan-Art-Contest-Semi-Finalists-713235990))
+
 * **Mobile compatibility**
+  * Fix bugs
 * Make a ben.squizit.net git for ben.squizit.net after site is finished or profile pages
 * Content layout system for pages that can be referenced in the Markdown files (with custom html tags)
 * **Add copyright to footer**
@@ -17,3 +20,4 @@
 * Have posts default to their feed color schemes
 * Make media-based stylesheet for print
 * FIX UP JSON-LD AND MAKE IT CONTEXT AWARE https://developers.google.com/search/docs/guides/search-gallery
+* Make link flashing effect only on arrow in main menu

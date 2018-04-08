@@ -1,9 +1,10 @@
 ---
-layout: page
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: page
 color: yellow
 ---
+
 # About Squizit
 
 *Under construction*
