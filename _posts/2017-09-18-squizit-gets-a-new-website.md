@@ -1,8 +1,7 @@
 ---
 title: Squizit is getting a new website!
 date: 2017-09-18 15:15:46 -06:00
-categories:
-- update
+category: update
 layout: post
 type: post
 image: new-website.jpg
