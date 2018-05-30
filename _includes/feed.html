@@ -7,7 +7,7 @@
      {% assign featured_id = post.id %}
      <div class="post-item featured">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
-         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
+         <div class="img {{post.id | slugify}}">
            <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>
@@ -26,7 +26,7 @@
      {% if post.id != featured_id and post.feed == include.feed %}
      <div class="post-item">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
-         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
+         <div class="img {{post.id | slugify}}">
            <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>
@@ -49,7 +49,7 @@
      {% assign featured_id = post.id %}
      <div class="post-item featured">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
-         <div class="img" style="background-image:url('/img/post/{{ post.image }}')">
+         <div class="img {{post.id | slugify}}">
            <h1>{{ post.title }}</h1>
            <div class="post-info">
             <span class="name">{{ post.type | capitalize }} / </span>{% if post.feed %}<span class="value">{{ post.feed | capitalize }} / </span>{% endif %}<span class="value">{{ post.category | capitalize }} / </span>

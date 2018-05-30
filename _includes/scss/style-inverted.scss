@@ -1,0 +1,27 @@
+---
+theme-name: inverted
+---
+
+$background: {{ site.data.colors.[page.theme-name].background }};
+$foreground: {{ site.data.colors.[page.theme-name].foreground }};
+$muted: {{ site.data.colors.[page.theme-name].muted }};
+
+$primary: {{ site.data.colors.[page.theme-name].primary }};
+$secondary: {{ site.data.colors.[page.theme-name].secondary }};
+$tertiary: {{ site.data.colors.[page.theme-name].tertiary }};
+
+{% if site.data.colors.[page.theme-name].menu %}
+$menu: {{ site.data.colors.[page.theme-name].menu }};
+$menu-hover: {{ site.data.colors.[page.theme-name].menu-hover }};
+{% endif %}
+
+{% if site.data.colors.[page.theme-name].logo %}
+$logo: {{ site.data.colors.[page.theme-name].logo }};
+$logo-hover: {{ site.data.colors.[page.theme-name].logo-hover }};
+{% endif %}
+
+{% if site.data.colors.[page.theme-name].article-header %}
+$article-header: {{ site.data.colors.[page.theme-name].article-header }};
+{% endif %}
+
+@import 'base';

@@ -9,16 +9,14 @@ collections:
     title: Uploads
     output: true
 email: contact@squizit.net
-description: 'We are a group of creators who want to share what me make.
-
-'
+description: 'We are a group of creators who want to share what me make.'
 baseurl: ''
 cover: "/img/cover.png"
 logo: "/img/squizit-icon.png"
 google-analytics-id: UA-104876043-1
 twitter: Squizit
 github: squizit
-facebook: 
+facebook:
 markdown: kramdown
 plugins:
 - jekyll-feed
