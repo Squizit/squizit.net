@@ -1,5 +1,5 @@
 ---
-title: Squizit is getting a new website!
+title: Squizit gets a new website!
 date: 2018-05-30 15:15:46 -06:00
 category: update
 layout: post
