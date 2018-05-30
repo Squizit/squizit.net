@@ -2,7 +2,8 @@
 
 <div class="feed">
   {% for post in site.posts %}
-     {% if (post.featured == true or post.feed-featured == true) and post.feed == include.feed %}
+    {% if post.feed == include.feed %}
+     {% if post.featured == true or post.feed-featured == true %}
      {% assign featured_id = post.id %}
      <div class="post-item featured">
        <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
@@ -18,6 +19,7 @@
          </a>
      </div>
        {% break %}
+     {% endif %}
      {% endif %}
   {% endfor %}
   {% for post in site.posts %}
@@ -39,9 +41,7 @@
   {% endfor %}
 </div>
 
-
 {% else %}
-
 
 <div class="feed">
   {% for post in site.posts %}
