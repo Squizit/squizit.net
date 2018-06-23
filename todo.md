@@ -1,4 +1,3 @@
-* Change animations on feed items (like [this](https://go.deviantart.com/journal/Atomic-Blonde-Fan-Art-Contest-Semi-Finalists-713235990))
 * **Add copyright to footer**
 * Add ability to enable and disable JS from config
 * On homepage, change post hover color based on category (grab colors from colors.yml)
@@ -14,7 +13,7 @@
 * FIX UP JSON-LD AND MAKE IT CONTEXT AWARE https://developers.google.com/search/docs/guides/search-gallery
 * Change CSS proccessing system for AMP compliance.
 
-# Design Changes
+# Major Design Changes
 * Remove floating info button and make site use that space
 * Make featured image on post page go all the way to the top and right of the screen with border-radius only on the bottom left
 * Move post metadata to the bottom of the page
@@ -23,3 +22,5 @@
 * Make page width same as post width
 * Make elements for use on pages and posts
 * Make mobile navigation less terrible
+* Change animations on feed items (like [this](https://go.deviantart.com/journal/Atomic-Blonde-Fan-Art-Contest-Semi-Finalists-713235990))
+* Make feed items fade in white overlay on hover instead of fade out
