@@ -24,3 +24,4 @@
 * Make mobile navigation less terrible
 * Change animations on feed items (like [this](https://go.deviantart.com/journal/Atomic-Blonde-Fan-Art-Contest-Semi-Finalists-713235990))
 * Make feed items fade in white overlay on hover instead of fade out
+* Make arrow on menu items transition in like arrow on feed items
