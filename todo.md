@@ -15,7 +15,7 @@
 * Change CSS proccessing system for AMP compliance.
 
 # Design Changes
-* Remove floating info button
+* Remove floating info button and make site use that space
 * Make featured image on post page go all the way to the top and right of the screen with border-radius only on the bottom left
 * Move post metadata to the bottom of the page
 * Move post metadata and author to bottom of page
