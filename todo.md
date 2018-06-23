@@ -12,6 +12,7 @@
 * Make stylesheet for printing
 * FIX UP JSON-LD AND MAKE IT CONTEXT AWARE https://developers.google.com/search/docs/guides/search-gallery
 * Change CSS proccessing system for AMP compliance.
+* Fix logo SVG sizing issues or change logo filetype
 
 # Major Design Changes
 * Remove floating info button and make site use that space
