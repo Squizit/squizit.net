@@ -7,4 +7,4 @@ color: yellow
 
 # About Squizit
 
-Squizit is a production company founded by Ben Saltz and is dedicated to bringing creating film, music, and live events. We are still in the early stages of finding out exactly how we are going to do that so stay tuned!
+Hi this is Ben, founder of Squizit and creator of this website. Squizit is currently only me. I want eventually to expand out into a team of people doing amazing things. Until then this site is an example of my web design and I also hope to post some projects here in the near future. Stay tuned!
