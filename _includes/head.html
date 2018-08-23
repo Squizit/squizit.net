@@ -12,12 +12,52 @@
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <style amp-custom>
   {% if include.color and site.data.colors contains include.color %}
-  {% capture css_location %}css/style-{{ include.color }}.css{% endcapture %}
-  <link rel="stylesheet" href="{{ css_location | absolute_url }}" />
+  {% capture include_to_scssify %}
+    $background: {{ site.data.colors.[include.color].background }};
+    $foreground: {{ site.data.colors.[include.color].foreground }};
+    $muted: {{ site.data.colors.[include.color].muted }};
+
+    $primary: {{ site.data.colors.[include.color].primary }};
+    $secondary: {{ site.data.colors.[include.color].secondary }};
+    $tertiary: {{ site.data.colors.[include.color].tertiary }};
+
+    {% if site.data.colors.[include.color].menu %}
+    $menu: {{ site.data.colors.[include.color].menu }};
+    $menu-hover: {{ site.data.colors.[include.color].menu-hover }};
+    {% endif %}
+
+    {% if site.data.colors.[include.color].logo %}
+    $logo: {{ site.data.colors.[include.color].logo }};
+    $logo-hover: {{ site.data.colors.[include.color].logo-hover }};
+    {% endif %}
+
+    {% if site.data.colors.[include.color].article-header %}
+    $article-header: {{ site.data.colors.[include.color].article-header }};
+    {% endif %}
+
+    @import 'base';
+
+    {% for post in site.posts %}
+    .img.{{post.id | slugify}} {
+      background-image:url('/img/post/{{ post.image }}')
+    }
+    {% endfor %}
+  {% endcapture %}
   {% else %}
-  <link rel="stylesheet" href="{{ 'css/style.css' | absolute_url }}" />
+  {% capture include_to_scssify %}
+    @import 'base';
+
+    {% for post in site.posts %}
+    .img.{{post.id | slugify}} {
+      background-image:url('/img/post/{{ post.image }}')
+    }
+    {% endfor %}
+  {% endcapture %}
   {% endif %}
+  {{ include_to_scssify | scssify }}
+  </style>
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -53,13 +93,4 @@
   <script type="application/ld+json">
   {% include metadata.json %}
   </script>
-
-  <style amp-custom>
-    {% for post in site.posts %}
-    .img.{{post.id | slugify}} {
-      background-image:url('/img/post/{{ post.image }}')
-    }
-    {% endfor %}
-  </style>
-
 </head>
