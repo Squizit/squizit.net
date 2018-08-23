@@ -1,5 +1,5 @@
 # Notice
-As of September 1st 2018, Squizit has moved to GitLab. The updated version of this project is no longer availible to the public.
+As of September 1st 2018, Squizit has moved to [GitLab](https://gitlab.com/squizit/). The updated version of this project is no longer availible to the public.
 
 # This is the Squizit website!
 
