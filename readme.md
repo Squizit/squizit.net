@@ -1,8 +1,11 @@
+# Notice
+As of September 1st 2018, Squizit has moved to GitLab. The updated version of this project is no longer availible to the public.
+
 # This is the Squizit website!
 
 Site built in Jekyll and hosted on GitHub pages. Eventually this will be updated to a Flask-based app when traffic increases and more features are needed.
 
-*&copy; Ben Saltz 2017*
+*&copy; Squizit 2018*
 
 ---
 
